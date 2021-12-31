@@ -1,0 +1,376 @@
+{
+    "work-count": 590,
+    "works": [
+        {
+            "id": "12c2223b-4ae8-4e53-b9bd-6af478487f1a",
+            "type": null,
+            "type-id": null,
+            "language": "zxx",
+            "iswcs": [],
+            "disambiguation": "Wiosna (#2) in Chopin's Polish Songs",
+            "languages": [
+                "zxx"
+            ],
+            "title": "6 Chants polonais, S. 480: 2. Frühling",
+            "attributes": []
+        },
+        {
+            "iswcs": [],
+            "type-id": null,
+            "language": "zxx",
+            "attributes": [],
+            "title": "6 Chants polonais, S. 480: 3. Das Ringlein",
+            "languages": [
+                "zxx"
+            ],
+            "disambiguation": "Pierścień (#14) in Chopin's Polish Songs",
+            "type": null,
+            "id": "13607b8a-3317-4219-aa06-70aa4d3b5503"
+        },
+        {
+            "type": null,
+            "id": "1bb71769-3c21-49f5-afa0-15f4a249f8f7",
+            "language": "zxx",
+            "type-id": null,
+            "iswcs": [],
+            "languages": [
+                "zxx"
+            ],
+            "disambiguation": "",
+            "attributes": [],
+            "title": "2 Mazurkas, B. 16"
+        },
+        {
+            "id": "35a7ec06-06ae-4b3e-baa4-1be76a39c698",
+            "type": null,
+            "disambiguation": "Narzeczony (#15) in Chopin's Polish Songs",
+            "languages": [
+                "zxx"
+            ],
+            "title": "6 Chants polonais, S. 480: 6. Heimkehr",
+            "attributes": [],
+            "language": "zxx",
+            "type-id": null,
+            "iswcs": []
+        },
+        {
+            "title": "6 Chants polonais, S. 480",
+            "attributes": [],
+            "languages": [
+                "zxx"
+            ],
+            "disambiguation": "",
+            "iswcs": [],
+            "language": "zxx",
+            "type-id": null,
+            "type": null,
+            "id": "380acc58-6a37-44ca-85d2-67485fb0cc91"
+        },
+        {
+            "type": null,
+            "id": "4c9f3751-a09a-3b1a-8ef4-5a4fc098120a",
+            "iswcs": [],
+            "type-id": null,
+            "language": "zxx",
+            "title": "Andante spianato et Grande polonaise brillante in E-flat major, op. 22",
+            "attributes": [
+                {
+                    "type": "Key",
+                    "type-id": "7526c19d-3be4-3420-b6cc-9fb6e49fa1a9",
+                    "value": "E-flat major",
+                    "value-id": "7ed963d7-dba9-3357-aefa-f34accb047cd"
+                }
+            ],
+            "languages": [
+                "zxx"
+            ],
+            "disambiguation": ""
+        },
+        {
+            "type": null,
+            "id": "5ddd538f-88ca-3477-930b-768f40be9fb6",
+            "attributes": [
+                {
+                    "value-id": "5661f83d-8049-3caa-abfc-4bd06ed21304",
+                    "value": "F-sharp minor",
+                    "type-id": "7526c19d-3be4-3420-b6cc-9fb6e49fa1a9",
+                    "type": "Key"
+                }
+            ],
+            "title": "3 Mazurkas, op. 59: No. 3 in F♯ minor. Vivace",
+            "languages": [
+                "zxx"
+            ],
+            "disambiguation": "",
+            "iswcs": [],
+            "type-id": null,
+            "language": "zxx"
+        },
+        {
+            "iswcs": [],
+            "language": "fra",
+            "type-id": "f061270a-2fd6-32f1-a641-f0f8676d14e6",
+            "title": "Aime-moi",
+            "attributes": [],
+            "disambiguation": "",
+            "languages": [
+                "fra"
+            ],
+            "id": "6fdda52b-0e2e-4dbc-96f0-38b6ecd16c51",
+            "type": "Song"
+        },
+        {
+            "type": null,
+            "id": "8f29334a-4246-44a5-82d5-1f84542c96f7",
+            "attributes": [
+                {
+                    "type-id": "7526c19d-3be4-3420-b6cc-9fb6e49fa1a9",
+                    "type": "Key",
+                    "value-id": "5a39055d-65ab-379d-bd0d-c106586eea08",
+                    "value": "F-sharp major"
+                }
+            ],
+            "title": "Allegretto in F-sharp major",
+            "languages": [
+                "zxx"
+            ],
+            "disambiguation": "",
+            "iswcs": [],
+            "language": "zxx",
+            "type-id": null
+        },
+        {
+            "type-id": null,
+            "language": "zxx",
+            "iswcs": [],
+            "languages": [
+                "zxx"
+            ],
+            "disambiguation": "",
+            "title": "3 Écossaises Op. posth. 72/3",
+            "attributes": [],
+            "type": null,
+            "id": "96fea892-c789-3516-afe0-391a3218a071"
+        },
+        {
+            "title": "Andante spianato et Grande polonaise brillante in E-flat major, op. 22",
+            "attributes": [],
+            "languages": [
+                "zxx"
+            ],
+            "disambiguation": "for piano and orchestra, Scharwenka",
+            "iswcs": [],
+            "language": "zxx",
+            "type-id": null,
+            "type": null,
+            "id": "b048d0df-d20e-4124-8e91-a5c3054074c1"
+        },
+        {
+            "type": null,
+            "id": "bfb78610-eb0c-36b6-8a89-29f003a404d2",
+            "title": "Andante spianato et Grande polonaise brillante in E-flat major, op. 22: II. Grande polonaise brillante. Allegro molto",
+            "attributes": [],
+            "languages": [
+                "zxx"
+            ],
+            "disambiguation": "",
+            "iswcs": [],
+            "type-id": null,
+            "language": "zxx"
+        },
+        {
+            "disambiguation": "Moja pieszczotka (#12) in Chopin's Polish Songs",
+            "languages": [
+                "zxx"
+            ],
+            "title": "6 Chants polonais, S. 480: 5. Meine Freuden",
+            "attributes": [],
+            "type-id": null,
+            "language": "zxx",
+            "iswcs": [],
+            "id": "ca7981a0-ea3a-418c-abee-b06441f5d371",
+            "type": null
+        },
+        {
+            "type": null,
+            "id": "cf983faa-f62d-49df-bd07-9ac1bab1651a",
+            "title": "3 Écossaises Op. posth. 72/3",
+            "attributes": [],
+            "languages": [
+                "zxx"
+            ],
+            "disambiguation": "original manuscript version",
+            "iswcs": [],
+            "type-id": null,
+            "language": "zxx"
+        },
+        {
+            "id": "d1f6b371-c9b4-4c6e-bb85-16bcfc369d5e",
+            "type": null,
+            "type-id": null,
+            "language": "zxx",
+            "iswcs": [],
+            "disambiguation": "",
+            "languages": [
+                "zxx"
+            ],
+            "attributes": [],
+            "title": "24 Préludes pour le piano, op. 28"
+        },
+        {
+            "attributes": [
+                {
+                    "value-id": "dd4cff1c-bc5b-3679-9b88-e64fe1fe6223",
+                    "value": "A-flat major",
+                    "type": "Key",
+                    "type-id": "7526c19d-3be4-3420-b6cc-9fb6e49fa1a9"
+                }
+            ],
+            "title": "3 Mazurkas, op. 59: No. 2 in A♭ major. Allegretto",
+            "disambiguation": "",
+            "languages": [
+                "zxx"
+            ],
+            "iswcs": [],
+            "type-id": null,
+            "language": "zxx",
+            "id": "d22b9273-c7e6-3bc6-ba89-49806836c1ca",
+            "type": null
+        },
+        {
+            "disambiguation": "",
+            "languages": [],
+            "title": "Andantino 'Spring' in G minor, B. 117",
+            "attributes": [
+                {
+                    "type-id": "7526c19d-3be4-3420-b6cc-9fb6e49fa1a9",
+                    "type": "Key",
+                    "value-id": "88fb14a3-69ee-3dd1-aa2c-d9142d871d3f",
+                    "value": "G minor"
+                }
+            ],
+            "language": null,
+            "type-id": null,
+            "iswcs": [],
+            "id": "d7335a80-7b58-4f1a-a236-b8d566ca6196",
+            "type": null
+        },
+        {
+            "type": null,
+            "id": "dd60bd66-4aa3-424d-9645-749bc13f8522",
+            "iswcs": [],
+            "language": null,
+            "type-id": null,
+            "title": "Andante spianato et Grande polonaise brillante in E-flat major, op. 22: II. Grande polonaise brillante. Allegro molto",
+            "attributes": [],
+            "languages": [],
+            "disambiguation": "catch-all for arrangements"
+        },
+        {
+            "attributes": [],
+            "title": "6 Chants polonais, S. 480: 1. Mädchens Wünsch",
+            "disambiguation": "Życzenie (#1) in Chopin's Polish Songs",
+            "languages": [
+                "zxx"
+            ],
+            "iswcs": [],
+            "language": "zxx",
+            "type-id": null,
+            "id": "e2c1b2c5-6735-4042-a77d-e1514d6951be",
+            "type": null
+        },
+        {
+            "title": "Andante spianato et Grande polonaise brillante in E-flat major, op. 22: I. Andante spianato",
+            "attributes": [],
+            "languages": [
+                "zxx"
+            ],
+            "disambiguation": "for piano and orchestra, Scharwenka",
+            "iswcs": [],
+            "type-id": null,
+            "language": "zxx",
+            "type": null,
+            "id": "e49d5859-9f84-46e2-81e6-980e01a550fc"
+        },
+        {
+            "iswcs": [],
+            "language": "zxx",
+            "type-id": null,
+            "attributes": [
+                {
+                    "value": "A minor",
+                    "value-id": "96609f3a-983d-3105-a900-60bff45d2bbc",
+                    "type": "Key",
+                    "type-id": "7526c19d-3be4-3420-b6cc-9fb6e49fa1a9"
+                }
+            ],
+            "title": "3 Mazurkas, op. 59: No. 1 in A minor. Moderato",
+            "disambiguation": "",
+            "languages": [
+                "zxx"
+            ],
+            "id": "e52e913e-1b78-3f9f-a39b-d0ae32df21a2",
+            "type": null
+        },
+        {
+            "iswcs": [],
+            "type-id": null,
+            "language": "zxx",
+            "title": "Andante spianato et Grande polonaise brillante in E-flat major, op. 22: II. Grande polonaise brillante. Allegro molto",
+            "attributes": [],
+            "disambiguation": "for piano and orchestra, Scharwenka",
+            "languages": [
+                "zxx"
+            ],
+            "id": "e80d1d19-734b-4038-a6b8-d0ccaa2e514c",
+            "type": null
+        },
+        {
+            "type": null,
+            "id": "edb74458-f902-4c9a-82f0-a808aa5cf0f1",
+            "languages": [
+                "zxx"
+            ],
+            "disambiguation": "",
+            "title": "Allegro de concert in A major, op. 46",
+            "attributes": [
+                {
+                    "value-id": "14e86ed3-7440-3d28-a095-405fc01692b7",
+                    "value": "A major",
+                    "type-id": "7526c19d-3be4-3420-b6cc-9fb6e49fa1a9",
+                    "type": "Key"
+                }
+            ],
+            "language": "zxx",
+            "type-id": null,
+            "iswcs": []
+        },
+        {
+            "iswcs": [],
+            "type-id": null,
+            "language": "zxx",
+            "attributes": [],
+            "title": "6 Chants polonais, S. 480: 4. Bacchanal",
+            "languages": [
+                "zxx"
+            ],
+            "disambiguation": "Hulanka (#4) in Chopin's Polish Songs",
+            "type": null,
+            "id": "f912d33f-3a35-426c-bad0-c83273f7f781"
+        },
+        {
+            "id": "fe4f1e5e-1220-3bf1-bbe9-9e3b7f384745",
+            "type": null,
+            "disambiguation": "",
+            "languages": [
+                "zxx"
+            ],
+            "attributes": [],
+            "title": "Andante spianato et Grande polonaise brillante in E-flat major, op. 22: I. Andante spianato",
+            "language": "zxx",
+            "type-id": null,
+            "iswcs": []
+        }
+    ],
+    "work-offset": 0
+}

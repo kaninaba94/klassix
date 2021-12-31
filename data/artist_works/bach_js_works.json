@@ -1,0 +1,386 @@
+{
+    "work-count": 7107,
+    "work-offset": 0,
+    "works": [
+        {
+            "iswcs": [],
+            "title": "3 Part Investigation",
+            "type-id": null,
+            "attributes": [],
+            "language": null,
+            "disambiguation": "",
+            "type": null,
+            "languages": [],
+            "id": "00c00028-48e1-35c7-803d-eb50c5df46c6"
+        },
+        {
+            "attributes": [],
+            "title": "\"Schmücke dich, o liebe Seele\", BWV Anh. 74",
+            "type-id": null,
+            "iswcs": [],
+            "id": "0ff01b4a-081e-4840-a98a-ab0e3818d83d",
+            "languages": [
+                "zxx"
+            ],
+            "type": null,
+            "disambiguation": "",
+            "language": "zxx"
+        },
+        {
+            "language": "zxx",
+            "disambiguation": "",
+            "type": null,
+            "languages": [
+                "zxx"
+            ],
+            "id": "18c30d27-8d62-4329-a60a-91b2445798e5",
+            "iswcs": [],
+            "type-id": null,
+            "title": "9 kleine Präludien: Präludium C-Dur, BWV 924a",
+            "attributes": []
+        },
+        {
+            "languages": [
+                "zxx"
+            ],
+            "id": "3642fe74-dc2e-4d0d-a84a-b2742fbc9514",
+            "type": null,
+            "disambiguation": "orch. Respighi",
+            "language": "zxx",
+            "attributes": [],
+            "type-id": null,
+            "title": "3 Corali, P. 167: Meine Seele erhebet den Herren, BWV 648",
+            "iswcs": []
+        },
+        {
+            "attributes": [],
+            "iswcs": [],
+            "type-id": null,
+            "title": "6 Partitas, BWV 825-830",
+            "type": null,
+            "languages": [
+                "zxx"
+            ],
+            "id": "3c1d42c1-0cdc-402e-8a0b-771b79c60742",
+            "language": "zxx",
+            "disambiguation": "Klavierübung I. Teil"
+        },
+        {
+            "languages": [],
+            "id": "3f886559-1365-480b-8093-f18de7885096",
+            "type": null,
+            "disambiguation": "catch-all for arrangements",
+            "language": null,
+            "attributes": [],
+            "type-id": null,
+            "title": "9 kleine Präludien: Präludium d-Moll, BWV 926",
+            "iswcs": []
+        },
+        {
+            "language": "zxx",
+            "disambiguation": "",
+            "type": null,
+            "id": "481decb3-7c35-3534-85ae-2a723ab35365",
+            "languages": [
+                "zxx"
+            ],
+            "iswcs": [],
+            "type-id": null,
+            "title": "6 kleine Präludien: Präludium e-Moll, BWV 938",
+            "attributes": [
+                {
+                    "type": "Key",
+                    "value": "E minor",
+                    "type-id": "7526c19d-3be4-3420-b6cc-9fb6e49fa1a9",
+                    "value-id": "6107f24b-ed48-31ce-a62e-2eaf58dd6124"
+                }
+            ]
+        },
+        {
+            "language": "zxx",
+            "disambiguation": "",
+            "type": null,
+            "languages": [
+                "zxx"
+            ],
+            "id": "671aeca6-05b4-3a40-823b-0d12b2a2a308",
+            "iswcs": [],
+            "type-id": null,
+            "title": "6 kleine Präludien: Präludium E-Dur, BWV 937",
+            "attributes": [
+                {
+                    "type-id": "7526c19d-3be4-3420-b6cc-9fb6e49fa1a9",
+                    "value-id": "5fd130f8-4180-38d8-9a8a-2f49d783792c",
+                    "value": "E major",
+                    "type": "Key"
+                }
+            ]
+        },
+        {
+            "iswcs": [],
+            "type-id": null,
+            "title": "6 kleine Präludien: Präludium C-Dur, BWV 933",
+            "attributes": [
+                {
+                    "type": "Key",
+                    "type-id": "7526c19d-3be4-3420-b6cc-9fb6e49fa1a9",
+                    "value-id": "2be62b15-2bb8-3040-a71c-5f467c223755",
+                    "value": "C major"
+                }
+            ],
+            "language": "zxx",
+            "disambiguation": "",
+            "type": null,
+            "languages": [
+                "zxx"
+            ],
+            "id": "6811b12f-e37f-31a1-81b3-5698cf5464ab"
+        },
+        {
+            "type": null,
+            "languages": [
+                "zxx"
+            ],
+            "id": "6af2b00e-ac22-3093-bf4e-f4275c91905a",
+            "language": "zxx",
+            "disambiguation": "",
+            "attributes": [
+                {
+                    "value": "A minor",
+                    "type-id": "7526c19d-3be4-3420-b6cc-9fb6e49fa1a9",
+                    "value-id": "96609f3a-983d-3105-a900-60bff45d2bbc",
+                    "type": "Key"
+                }
+            ],
+            "iswcs": [],
+            "title": "9 kleine Präludien: Präludium A-Moll, BWV 931",
+            "type-id": null
+        },
+        {
+            "attributes": [],
+            "title": "3 Corali, P. 167: Nun komm, der Heiden Heiland, BWV 659",
+            "type-id": null,
+            "iswcs": [],
+            "id": "72420450-07b1-494c-ba75-ec4047d2c156",
+            "languages": [
+                "zxx"
+            ],
+            "type": null,
+            "disambiguation": "orch. Respighi",
+            "language": "zxx"
+        },
+        {
+            "attributes": [],
+            "title": "3 Corali, P. 167",
+            "type-id": null,
+            "iswcs": [],
+            "id": "7618da96-601d-405f-aafd-46e295f6539a",
+            "languages": [
+                "zxx"
+            ],
+            "type": null,
+            "disambiguation": "",
+            "language": "zxx"
+        },
+        {
+            "language": "zxx",
+            "disambiguation": "",
+            "type": null,
+            "id": "7a1e78f3-0648-4550-9586-df7574bbff86",
+            "languages": [
+                "zxx"
+            ],
+            "iswcs": [],
+            "type-id": null,
+            "title": "\"O Lamm Gottes, unschuldig\" Weimarer Fassung, BWV 656a",
+            "attributes": []
+        },
+        {
+            "id": "9309e7da-a919-3b15-be58-7939a6bde82e",
+            "languages": [
+                "zxx"
+            ],
+            "type": null,
+            "disambiguation": "",
+            "language": "zxx",
+            "attributes": [
+                {
+                    "type": "Key",
+                    "value": "C major",
+                    "type-id": "7526c19d-3be4-3420-b6cc-9fb6e49fa1a9",
+                    "value-id": "2be62b15-2bb8-3040-a71c-5f467c223755"
+                }
+            ],
+            "type-id": null,
+            "title": "9 kleine Präludien: Präludium C-Dur, BWV 924",
+            "iswcs": []
+        },
+        {
+            "id": "9deecf21-8d3f-3bbd-8f36-6331c9fd6d35",
+            "languages": [
+                "zxx"
+            ],
+            "type": null,
+            "disambiguation": "",
+            "language": "zxx",
+            "attributes": [
+                {
+                    "type": "Key",
+                    "value": "D major",
+                    "type-id": "7526c19d-3be4-3420-b6cc-9fb6e49fa1a9",
+                    "value-id": "04ea6009-d2c8-3bbd-b19a-8366540d2575"
+                }
+            ],
+            "type-id": null,
+            "title": "9 kleine Präludien: Präludium D-Dur, BWV 925",
+            "iswcs": []
+        },
+        {
+            "iswcs": [],
+            "title": "6 Französische Suiten",
+            "type-id": null,
+            "attributes": [],
+            "language": "zxx",
+            "disambiguation": "",
+            "type": null,
+            "id": "a7722307-39d3-47f6-8631-fa793dff9519",
+            "languages": [
+                "zxx"
+            ]
+        },
+        {
+            "id": "acef3882-7525-4d38-ad85-43b235c6f5c7",
+            "languages": [
+                "zxx"
+            ],
+            "type": null,
+            "disambiguation": "",
+            "language": "zxx",
+            "attributes": [],
+            "title": "8 kleine Präludien und Fugen, BWV 553-560",
+            "type-id": null,
+            "iswcs": []
+        },
+        {
+            "disambiguation": "for piano, Chuquisengo",
+            "language": "zxx",
+            "languages": [
+                "zxx"
+            ],
+            "id": "b32602a9-b122-4188-9321-1098106e49ce",
+            "type": null,
+            "title": "“Jesus bleibet meine Freude” from Cantata, BWV 147",
+            "type-id": null,
+            "iswcs": [],
+            "attributes": []
+        },
+        {
+            "iswcs": [],
+            "type-id": null,
+            "title": "3. Brandenburgisches Konzert, 1. und 3. Satz",
+            "attributes": [],
+            "language": null,
+            "disambiguation": "",
+            "type": null,
+            "id": "b78c13ca-bf3e-3726-897c-f0cc73db010a",
+            "languages": []
+        },
+        {
+            "iswcs": [],
+            "title": "“Vom Himmel hoch, da komm ich her” BWV-Anh. 65",
+            "type-id": null,
+            "attributes": [],
+            "language": null,
+            "disambiguation": "",
+            "type": null,
+            "languages": [],
+            "id": "c0b142d2-8258-471b-8619-ea358f55b09c"
+        },
+        {
+            "attributes": [],
+            "type-id": null,
+            "title": "\"Erbarme Dich\" from the Saint Matthew Passion",
+            "iswcs": [],
+            "id": "d2f4ada3-7e75-41be-930d-c2da04c01d8a",
+            "languages": [
+                "zxx"
+            ],
+            "type": null,
+            "disambiguation": "for two pianos, Anderson & Roe",
+            "language": "zxx"
+        },
+        {
+            "title": "6 kleine Präludien: Präludium c-Moll, BWV 934",
+            "type-id": null,
+            "iswcs": [],
+            "attributes": [
+                {
+                    "value": "C minor",
+                    "type-id": "7526c19d-3be4-3420-b6cc-9fb6e49fa1a9",
+                    "value-id": "d3d0b554-d3f4-3995-b995-5113f3771295",
+                    "type": "Key"
+                }
+            ],
+            "disambiguation": "",
+            "language": "zxx",
+            "languages": [
+                "zxx"
+            ],
+            "id": "e9fb0b29-e911-355a-b338-b72ac758f9ea",
+            "type": null
+        },
+        {
+            "attributes": [],
+            "iswcs": [],
+            "title": "3 Corali, P. 167: Wachet auf, ruft uns die Stimme, BWV 645",
+            "type-id": null,
+            "type": null,
+            "languages": [
+                "zxx"
+            ],
+            "id": "ea3ad70b-f18f-4909-86a8-5de680e7adba",
+            "language": "zxx",
+            "disambiguation": "orch. Respighi"
+        },
+        {
+            "disambiguation": "",
+            "language": "zxx",
+            "id": "efa95dca-e138-3fc4-b0fe-2c5551ee60ff",
+            "languages": [
+                "zxx"
+            ],
+            "type": null,
+            "type-id": null,
+            "title": "6 kleine Präludien: Präludium d-Moll, BWV 935",
+            "iswcs": [],
+            "attributes": [
+                {
+                    "type": "Key",
+                    "value": "D minor",
+                    "value-id": "6ff37406-fe52-30fd-a969-5e75b97b21c0",
+                    "type-id": "7526c19d-3be4-3420-b6cc-9fb6e49fa1a9"
+                }
+            ]
+        },
+        {
+            "iswcs": [],
+            "type-id": null,
+            "title": "6 kleine Präludien: Präludium D-Dur, BWV 936",
+            "attributes": [
+                {
+                    "value": "D major",
+                    "value-id": "04ea6009-d2c8-3bbd-b19a-8366540d2575",
+                    "type-id": "7526c19d-3be4-3420-b6cc-9fb6e49fa1a9",
+                    "type": "Key"
+                }
+            ],
+            "language": "zxx",
+            "disambiguation": "",
+            "type": null,
+            "languages": [
+                "zxx"
+            ],
+            "id": "f2704054-287f-3402-bc80-812667d9b012"
+        }
+    ]
+}

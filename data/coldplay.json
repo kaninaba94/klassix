@@ -1,0 +1,528 @@
+{
+    "created": "2021-12-30T15:47:50.694Z",
+    "count": 11,
+    "offset": 0,
+    "artists": [
+        {
+            "id": "cc197bad-dc9c-440d-a5b5-d52ba2e14234",
+            "type": "Group",
+            "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+            "score": 100,
+            "name": "Coldplay",
+            "sort-name": "Coldplay",
+            "country": "GB",
+            "area": {
+                "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                "type": "Country",
+                "type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
+                "name": "United Kingdom",
+                "sort-name": "United Kingdom",
+                "life-span": {
+                    "ended": null
+                }
+            },
+            "begin-area": {
+                "id": "f03d09b3-39dc-4083-afd6-159e3f0d462f",
+                "type": "City",
+                "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+                "name": "London",
+                "sort-name": "London",
+                "life-span": {
+                    "ended": null
+                }
+            },
+            "isnis": [
+                "000000011551394X"
+            ],
+            "life-span": {
+                "begin": "1996-09",
+                "ended": null
+            },
+            "aliases": [
+                {
+                    "sort-name": "Cold Play",
+                    "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                    "name": "Cold Play",
+                    "locale": null,
+                    "type": "Search hint",
+                    "primary": null,
+                    "begin-date": null,
+                    "end-date": null
+                },
+                {
+                    "sort-name": "Coldplay, The",
+                    "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                    "name": "The Coldplay",
+                    "locale": null,
+                    "type": "Artist name",
+                    "primary": null,
+                    "begin-date": null,
+                    "end-date": "1998"
+                }
+            ],
+            "tags": [
+                {
+                    "count": 5,
+                    "name": "rock"
+                },
+                {
+                    "count": 10,
+                    "name": "pop"
+                },
+                {
+                    "count": 23,
+                    "name": "alternative rock"
+                },
+                {
+                    "count": 9,
+                    "name": "british"
+                },
+                {
+                    "count": 2,
+                    "name": "uk"
+                },
+                {
+                    "count": 0,
+                    "name": "britannique"
+                },
+                {
+                    "count": 1,
+                    "name": "britpop"
+                },
+                {
+                    "count": 5,
+                    "name": "pop rock"
+                },
+                {
+                    "count": 0,
+                    "name": "piano pop"
+                },
+                {
+                    "count": 1,
+                    "name": "piano rock"
+                },
+                {
+                    "count": 0,
+                    "name": "english"
+                },
+                {
+                    "count": 0,
+                    "name": "parlophone"
+                },
+                {
+                    "count": 0,
+                    "name": "rock and indie"
+                },
+                {
+                    "count": 0,
+                    "name": "ambient pop"
+                },
+                {
+                    "count": 0,
+                    "name": "pop/rock"
+                },
+                {
+                    "count": 0,
+                    "name": "chapel"
+                },
+                {
+                    "count": 0,
+                    "name": "post-britpop"
+                }
+            ]
+        },
+        {
+            "id": "a7331511-edcf-4e1f-b2b4-46f3b30f7f32",
+            "type": "Person",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "score": 63,
+            "name": "冷玩妹",
+            "sort-name": "Coldplay Sister",
+            "country": "TW",
+            "area": {
+                "id": "41637cec-9a4f-389c-86d2-fc6abf3357b5",
+                "type": "Country",
+                "type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
+                "name": "Taiwan",
+                "sort-name": "Taiwan",
+                "life-span": {
+                    "ended": null
+                }
+            },
+            "life-span": {
+                "ended": null
+            },
+            "aliases": [
+                {
+                    "sort-name": "Coldplay Sister",
+                    "name": "Coldplay Sister",
+                    "locale": "en",
+                    "type": null,
+                    "primary": true,
+                    "begin-date": null,
+                    "end-date": null
+                }
+            ]
+        },
+        {
+            "id": "62c54a75-265f-4e13-ad0a-0fb001559a2e",
+            "type": "Group",
+            "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+            "score": 62,
+            "name": "Viva La Coldplay",
+            "sort-name": "Viva La Coldplay",
+            "country": "GB",
+            "area": {
+                "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                "type": "Country",
+                "type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
+                "name": "United Kingdom",
+                "sort-name": "United Kingdom",
+                "life-span": {
+                    "ended": null
+                }
+            },
+            "life-span": {
+                "begin": "2006",
+                "ended": null
+            }
+        },
+        {
+            "id": "9dc3e3b3-7083-4912-901c-5b59c551cef7",
+            "type": "Group",
+            "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+            "score": 40,
+            "name": "Fix You",
+            "sort-name": "Fix You",
+            "disambiguation": "Coldplay Cover Band",
+            "life-span": {
+                "ended": null
+            }
+        },
+        {
+            "id": "98d1ec5a-dd97-4c0b-9c83-7928aac89bca",
+            "type": "Person",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "score": 39,
+            "gender-id": "36d3d30a-839d-3eda-8cb3-29be4384e4a9",
+            "name": "Chris Martin",
+            "sort-name": "Martin, Chris",
+            "gender": "male",
+            "country": "GB",
+            "area": {
+                "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                "type": "Country",
+                "type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
+                "name": "United Kingdom",
+                "sort-name": "United Kingdom",
+                "life-span": {
+                    "ended": null
+                }
+            },
+            "begin-area": {
+                "id": "d0c9de57-1765-48c8-9738-9eab0658a403",
+                "type": "City",
+                "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+                "name": "Exeter",
+                "sort-name": "Exeter",
+                "life-span": {
+                    "ended": null
+                }
+            },
+            "disambiguation": "lead singer of Coldplay",
+            "ipis": [
+                "00280536565"
+            ],
+            "isnis": [
+                "0000000114707136"
+            ],
+            "life-span": {
+                "begin": "1977-03-02",
+                "ended": null
+            },
+            "aliases": [
+                {
+                    "sort-name": "Martin, Christopher Anthony John",
+                    "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                    "name": "Christopher Anthony John Martin",
+                    "locale": null,
+                    "type": "Legal name",
+                    "primary": null,
+                    "begin-date": null,
+                    "end-date": null
+                }
+            ],
+            "tags": [
+                {
+                    "count": 1,
+                    "name": "pop/rock"
+                },
+                {
+                    "count": 1,
+                    "name": "rock"
+                }
+            ]
+        },
+        {
+            "id": "45f1b28b-b5e0-4c02-a8df-e9068b04c295",
+            "type": "Group",
+            "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+            "score": 37,
+            "name": "The Scientists",
+            "sort-name": "The Scientists",
+            "country": "NL",
+            "area": {
+                "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7",
+                "type": "Country",
+                "type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
+                "name": "Netherlands",
+                "sort-name": "Netherlands",
+                "life-span": {
+                    "ended": null
+                }
+            },
+            "disambiguation": "Dutch Tribute to Coldplay",
+            "life-span": {
+                "ended": null
+            }
+        },
+        {
+            "id": "b0de26a1-1a51-4a6d-8a3f-f3aaccdc7ad9",
+            "type": "Group",
+            "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+            "score": 37,
+            "name": "Goldplay",
+            "sort-name": "Goldplay",
+            "country": "DE",
+            "area": {
+                "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+                "type": "Country",
+                "type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
+                "name": "Germany",
+                "sort-name": "Germany",
+                "life-span": {
+                    "ended": null
+                }
+            },
+            "disambiguation": "German Coldplay tribute band",
+            "life-span": {
+                "ended": null
+            }
+        },
+        {
+            "id": "e5c9b9b3-9629-43c4-9f05-19e02b8deba1",
+            "type": "Group",
+            "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+            "score": 33,
+            "name": "Los Unidades",
+            "sort-name": "Los Unidades",
+            "country": "GB",
+            "area": {
+                "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                "type": "Country",
+                "type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
+                "name": "United Kingdom",
+                "sort-name": "United Kingdom",
+                "life-span": {
+                    "ended": null
+                }
+            },
+            "begin-area": {
+                "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                "type": "Country",
+                "type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
+                "name": "United Kingdom",
+                "sort-name": "United Kingdom",
+                "life-span": {
+                    "ended": null
+                }
+            },
+            "disambiguation": "also performs as British band Coldplay",
+            "life-span": {
+                "begin": "2018-11-27",
+                "ended": null
+            }
+        },
+        {
+            "id": "7db9f233-2616-4c05-b27f-b08a59d79731",
+            "type": "Person",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "score": 33,
+            "gender-id": "36d3d30a-839d-3eda-8cb3-29be4384e4a9",
+            "name": "Matt Romano",
+            "sort-name": "Romano, Matt",
+            "gender": "male",
+            "disambiguation": "associated with Coldplay and The Strokes",
+            "life-span": {
+                "ended": null
+            }
+        },
+        {
+            "id": "e18b5e9d-b584-4fc5-ab51-31b9e981352c",
+            "type": "Group",
+            "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+            "score": 30,
+            "name": "Logo",
+            "sort-name": "Logo",
+            "disambiguation": "Project which made a trancy version of Coldplay's \"Don't Panic\"",
+            "life-span": {
+                "ended": null
+            }
+        },
+        {
+            "id": "2b5929bc-ffbf-496b-a66f-90dae13cbfe7",
+            "type": "Group",
+            "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+            "score": 27,
+            "name": "The Section Quartet",
+            "sort-name": "Section Quartet, The",
+            "country": "US",
+            "area": {
+                "id": "489ce91b-6658-3307-9877-795b68554c98",
+                "type": "Country",
+                "type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
+                "name": "United States",
+                "sort-name": "United States",
+                "life-span": {
+                    "ended": null
+                }
+            },
+            "begin-area": {
+                "id": "1f40c6e1-47ba-4e35-996f-fe6ee5840e62",
+                "type": "City",
+                "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+                "name": "Los Angeles",
+                "sort-name": "Los Angeles",
+                "life-span": {
+                    "ended": null
+                }
+            },
+            "isnis": [
+                "0000000120336458"
+            ],
+            "life-span": {
+                "begin": "1998",
+                "ended": null
+            },
+            "aliases": [
+                {
+                    "sort-name": "String Quartet",
+                    "name": "String Quartet",
+                    "locale": null,
+                    "type": null,
+                    "primary": null,
+                    "begin-date": null,
+                    "end-date": null
+                },
+                {
+                    "sort-name": "The Section String Quartet",
+                    "name": "The Section String Quartet",
+                    "locale": null,
+                    "type": null,
+                    "primary": null,
+                    "begin-date": null,
+                    "end-date": null
+                },
+                {
+                    "sort-name": "The String Tribute to System of a Down",
+                    "name": "The String Tribute to System of a Down",
+                    "locale": null,
+                    "type": null,
+                    "primary": null,
+                    "begin-date": null,
+                    "end-date": null
+                },
+                {
+                    "sort-name": "Eric Gorfain and the Section",
+                    "name": "Eric Gorfain and the Section",
+                    "locale": null,
+                    "type": null,
+                    "primary": null,
+                    "begin-date": null,
+                    "end-date": null
+                },
+                {
+                    "sort-name": "The String Quartet Tribute to Disturbed",
+                    "name": "The String Quartet Tribute to Disturbed",
+                    "locale": null,
+                    "type": null,
+                    "primary": null,
+                    "begin-date": null,
+                    "end-date": null
+                },
+                {
+                    "sort-name": "The String Quartet Tribute to Incubus",
+                    "name": "The String Quartet Tribute to Incubus",
+                    "locale": null,
+                    "type": null,
+                    "primary": null,
+                    "begin-date": null,
+                    "end-date": null
+                },
+                {
+                    "sort-name": "The String Tribute to TOOL",
+                    "name": "The String Tribute to TOOL",
+                    "locale": null,
+                    "type": null,
+                    "primary": null,
+                    "begin-date": null,
+                    "end-date": null
+                },
+                {
+                    "sort-name": "The String Quartet",
+                    "name": "The String Quartet",
+                    "locale": null,
+                    "type": null,
+                    "primary": null,
+                    "begin-date": null,
+                    "end-date": null
+                },
+                {
+                    "sort-name": "The String Quartet Tribute to Nine Inch Nails",
+                    "name": "The String Quartet Tribute to Nine Inch Nails",
+                    "locale": null,
+                    "type": null,
+                    "primary": null,
+                    "begin-date": null,
+                    "end-date": null
+                },
+                {
+                    "sort-name": "The Section",
+                    "name": "The Section",
+                    "locale": null,
+                    "type": null,
+                    "primary": null,
+                    "begin-date": null,
+                    "end-date": null
+                },
+                {
+                    "sort-name": "The String Quartet Tribute to Coldplay",
+                    "name": "The String Quartet Tribute to Coldplay",
+                    "locale": null,
+                    "type": null,
+                    "primary": null,
+                    "begin-date": null,
+                    "end-date": null
+                },
+                {
+                    "sort-name": "The String Quartet Tribute to 311",
+                    "name": "The String Quartet Tribute to 311",
+                    "locale": null,
+                    "type": null,
+                    "primary": null,
+                    "begin-date": null,
+                    "end-date": null
+                },
+                {
+                    "sort-name": "The String Quartet Tribute to Tool",
+                    "name": "The String Quartet Tribute to Tool",
+                    "locale": null,
+                    "type": null,
+                    "primary": null,
+                    "begin-date": null,
+                    "end-date": null
+                }
+            ]
+        }
+    ]
+}
