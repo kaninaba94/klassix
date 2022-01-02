@@ -1,28 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>klassix</title>
-    <link rel="shortcut icon" href="#">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="div">
-        <input type="text" id="input" size=20/>
-<!--        <button id="searchButton">Search works</button>-->
-        <br>
-        <ul>
-        <% if (typeof(composerIds) !== 'undefined') {
-            for (const [composer, id] of Object.entries(composerIds)) { %>
-                <li><a href="work_composer=<%=id%>"><%=composer%></a></li>
-<!--                <br>-->
-            <% } %>
+<link rel="stylesheet" href="/public/style.css">
+<div id="div">
+    <input type="text" id="input" size=20 placeholder="Search a composer .."/>
+    <button id="button">fetch</button>
+    <br>
+    <ul>
+    <% if (typeof(composerIds) !== 'undefined') {
+        for (const [composer, id] of Object.entries(composerIds)) { %>
+            <li><a href="work_composer=<%=id%>"><%=composer%></a></li>
         <% } %>
-        </ul>
-    </div>
-    <script src="/scripti.js"></script>
-</body>
-</html>
+    <% } %>
+    </ul>
+</div>
+<script src="/public/scripti.js"></script>
 <!--TODO: remove spaces between list items-->

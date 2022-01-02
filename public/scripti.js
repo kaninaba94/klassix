@@ -16,9 +16,9 @@ async function myFetch() {
 
         }
     }
-    await xhttp.open('GET', query)
+    await xhttp.open('GET', query, true)
     xhttp.setRequestHeader('Accept', 'application/json')
-    await xhttp.send()
+    await xhttp.send(null)
 }
 
 async function searchArtist() {
@@ -38,19 +38,26 @@ async function searchArtist() {
     }
 }
 
-const input = document.getElementById('input')
-input.addEventListener('keyup', searchArtist)
-
-// async function searchWorks() {
-//     const input = document.getElementById('input')
+// async function showComposerWorks() {
 //     const xhr = new XMLHttpRequest()
 //     xhr.onreadystatechange = async function () {
 //
 //     }
-//     xhr.open()
-//     xhr.setRequestHeader()
-//     xhr.send(null)
+//     const query = `https://www.musicbrainz.org/ws/2/work?artist=${this.id}`
+//     await xhr.open('GET', query)
+//     xhr.setRequestHeader('Accept', 'application/json')
+//     // xhr.setRequestHeader('Access-Control-Allow-Origin', '*')
+//     await xhr.send()
 // }
-//
-// const btn = document.getElementById('searchButton')
-// btn.addEventListener('click', searchWorks)
+
+const input = document.getElementById('input')
+input.addEventListener('keyup', searchArtist)
+
+const div = document.getElementById('div')
+// const anchors = div.getElementsByTagName('a')
+// for (a of anchors) {
+//     a.addEventListener('click', showComposerWorks)
+// }
+
+const btn = document.getElementById('button')
+btn.addEventListener('click', myFetch)
