@@ -35,11 +35,15 @@ app.use(expressEjsLayouts)
 // const indexRouter = require('./routes/index')
 // app.use('/', indexRouter)
 
-mongoose.connect(process.env.DATABASE_URL, {useNewUrlParser: true, useUnifiedTopology: true})
+async function connect2Mongoose() {
+    await mongoose.connect(process.env.DATABASE_URL, {useNewUrlParser: true, useUnifiedTopology: true})
+    const db = mongoose.connection
+    db.on('error', error => console.log(error))
+    db.once('open', () => console.log('Connected to Mongoose'))
+}
 
-const db = mongoose.connection
-db.on('error', error => console.log(error))
-db.once('open', () => console.log('Connected to Mongoose'))
+connect2Mongoose()
+
 const Composer = require('./database')
 const corsOptions = {
     origin: '*',
