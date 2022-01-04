@@ -1,25 +1,26 @@
-async function myFetch() {
-    const query = 'https://www.musicbrainz.org/ws/2/artist?query=coldplay'
-    const xhttp = new XMLHttpRequest()
-
-    xhttp.onreadystatechange = function () {
-        const div = document.getElementById('div')
-        try {
-            var result = JSON.parse(this.response.toString())
-            console.log(result.artists)
-            // for (artist of result.artists) {
-            //     var p = document.createElement('p')
-            //     p.innerHTML = artist.name
-            //     div.appendChild(p)
-            // }
-        } catch (e) {
-
-        }
-    }
-    await xhttp.open('GET', query, true)
-    xhttp.setRequestHeader('Accept', 'application/json')
-    await xhttp.send(null)
-}
+// // commented out to check whether the presence of a cross-origin request prevents proper loading of the heroku app
+// async function myFetch() {
+//     const query = 'https://www.musicbrainz.org/ws/2/artist?query=coldplay'
+//     const xhttp = new XMLHttpRequest()
+//
+//     xhttp.onreadystatechange = function () {
+//         const div = document.getElementById('div')
+//         try {
+//             var result = JSON.parse(this.response.toString())
+//             console.log(result.artists)
+//             // for (artist of result.artists) {
+//             //     var p = document.createElement('p')
+//             //     p.innerHTML = artist.name
+//             //     div.appendChild(p)
+//             // }
+//         } catch (e) {
+//
+//         }
+//     }
+//     await xhttp.open('GET', query, true)
+//     xhttp.setRequestHeader('Accept', 'application/json')
+//     await xhttp.send(null)
+// }
 
 async function searchArtist() {
     var input = document.getElementById('input')

@@ -1,5 +1,5 @@
 if (process.env.NODE_ENV !== 'production') {
-    require('dotenv').config()  //  alternatively require('dotenv').load() or require('dotenv').parse()
+    require('dotenv').parse()  //  alternatively require('dotenv').load() or require('dotenv').parse()
 }
 
 const express = require('express')
@@ -9,7 +9,7 @@ const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
 const session = require('express-session')
 const flash = require('express-flash')
-const cors = require('cors')
+// const cors = require('cors')
 const bcrypt = require('bcrypt')
 const fs = require('fs')
 const XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest
@@ -23,10 +23,10 @@ app.use(express.static(__dirname))
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'))
 app.use(express.json())
-app.use(cors({
-    origin: '*',
-    methods: ['GET', 'POST', 'DELETE', 'UPDATE', 'PUT', 'PATCH'],
-}))
+// app.use(cors({
+//     origin: '*',
+//     methods: ['GET', 'POST', 'DELETE', 'UPDATE', 'PUT', 'PATCH'],
+// }))
 app.set('layout', 'layouts/layout')
 app.use(expressEjsLayouts)
 //TODO: How do I get BWV works etc.?
