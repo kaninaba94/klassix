@@ -4,12 +4,11 @@
     <button id="button">fetch</button>
     <br>
     <ul>
-    <% if (typeof(composerIds) !== 'undefined') {
-        for (const [composer, id] of Object.entries(composerIds)) { %>
-            <li><a href="work_composer=<%=id%>"><%=composer%></a></li>
+    <% if (typeof(composers) !== 'undefined') {
+        for (const composer of composers) { %>
+            <li><a href="work_composer=<%=composer.id%>"><%=composer.name%></a></li>
         <% } %>
     <% } %>
     </ul>
 </div>
 <script src="/public/scripti.js"></script>
-<!--TODO: remove spaces between list items-->

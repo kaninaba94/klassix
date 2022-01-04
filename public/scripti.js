@@ -28,7 +28,6 @@ async function searchArtist() {
     const div = document.getElementById('div')
     const lis = div.getElementsByTagName('li')
     for (li of lis) {
-        //TODO: remove allocated spaces for anchortags when not displaying them
         var a = li.getElementsByTagName('a')[0]
         var txtValue = a.textContent || a.innerText
         if (txtValue.toLowerCase().indexOf(input.value.toLowerCase()) > -1) {

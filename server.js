@@ -29,29 +29,29 @@ app.use(express.json())
 // }))
 app.set('layout', 'layouts/layout')
 app.use(expressEjsLayouts)
-//TODO: How do I get BWV works etc.?
-//TODO: Set up online presence with Mongo, or SQL alternatively
+// TODO: How do I get the works comprised in a catalogue from the musicbrianz API?
+// TODO: Migrate the local DB to MongoDB Atlas.
 
 // const indexRouter = require('./routes/index')
 // app.use('/', indexRouter)
 
-mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true })
+mongoose.connect(process.env.DATABASE_URL, {useNewUrlParser: true, useUnifiedTopology: true})
 
 const db = mongoose.connection
 db.on('error', error => console.log(error))
 db.once('open', () => console.log('Connected to Mongoose'))
-
+const Composer = require('./database')
 const corsOptions = {
     origin: '*',
     methods: ['GET', 'POST', 'DELETE', 'UPDATE', 'PUT', 'PATCH'],
     credentials: true
 }
 
-app.get('/', (req, res) => {
+app.get('/', async (req, res) => {
     // // commented out to get heroku app running (it can't read files using fs)
     // var composerIds = JSON.parse(fs.readFileSync('C:\\Users\\knaraghi\\pycharm\\klassix\\data\\artist_ids.json'))
-    // res.render('index.ejs', {composerIds: composerIds})
-    res.render('index.ejs')
+    const composers = await Composer.find()
+    res.render('index.ejs', {composers: composers})
 })
 
 app.get('/work_composer=:id', async (req, res) => {
@@ -68,7 +68,6 @@ app.get('/work_composer=:id', async (req, res) => {
         musicbrainzRes = await axios.get(query)
         works = works.concat(musicbrainzRes.data.works)
     }
-    //TODO: make sure all the works are collected
     res.render('composerWorks.ejs', {works: works})
 })
 
@@ -77,12 +76,15 @@ app.get('/test', (req, res) => {
 })
 
 function sleep(ms) {
-  return new Promise((resolve) => {
-    setTimeout(resolve, ms);
-  });
+    return new Promise((resolve) => {
+        setTimeout(resolve, ms);
+    });
 }
 
 const port = 3000
 app.listen(process.env.PORT || port, async () => {
     console.log(`App is listening on port ${port}!`)
 })
+
+//TODO: Set up a large enough database of works locally to meaningfully simulate the eventual running website.
+// TODO: How do I exclude gitignore files in 'git add' ?
