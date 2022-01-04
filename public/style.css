@@ -1,18 +1,73 @@
-input {
-    width: 20rem;
+body {
+    background-color: rgb(222, 239, 255);
+    margin: 0;
+    padding: 0;
 }
 
-ul {
+#authDiv {
+    display: flex;
+    width: 100%;
+    background-color: rgb(201, 229, 255);
+    position: sticky;
+    top: 0;
+    margin: 0;
+}
+
+#authDiv form {
+    display: flex;
+    margin: 10 px;
+}
+
+#authDiv label, button, a {
+    margin: 6px;
+    color: darkblue;
+}
+
+#authDiv input, textarea {
+    background-color: rgb(247, 248, 250);
+    margin: 6px;
+    color: darkblue;
+}
+
+
+
+
+
+#compDiv {
+    width: 100%;
+    background-color: rgb(222, 239, 255);
+    height: 100%;
+}
+
+#compDiv input {
+    width: 20rem;
+    background-color: rgb(247, 248, 250);
+}
+
+#compDiv ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-li {
+#compDiv li {
     /*float: left;*/
-    display: none;
+    display: block;
 }
 
-a {
+#compDiv a {
     line-height: 0;
+}
+
+
+
+
+#registerDiv {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(222, 239, 255);
+}
+
+#registerDiv label, input, button {
+    margin: 6px;
 }

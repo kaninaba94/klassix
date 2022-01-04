@@ -5,8 +5,7 @@ if (process.env.NODE_ENV !== 'production') {
 const fs = require('fs')
 const mongoose = require('mongoose')
 
-const composerSchema = mongoose.Schema(
-    {
+const composerSchema = mongoose.Schema({
         name: {
             type: String,
             required: true,
@@ -17,13 +16,36 @@ const composerSchema = mongoose.Schema(
             required: true,
             unique: true
         }
+    })
+
+const userSchema = new mongoose.Schema({
+    id: {
+        type: String,
+        required: true,
+        unique: true
+    },
+    name: {
+        type: String,
+        required: true,
+        unique: true
+    },
+    email: {
+        type: String,
+        required: true,
+        unique: true
+    },
+    password: {
+        type: String,
+        required: true
     }
-)
+})
 
 const Composer = mongoose.model('Composer', composerSchema)
 
+const User = mongoose.model('User', userSchema)
+
 async function asyncFunction() {
-    await mongoose.connect('mongodb+srv://kaninaba94:E3rZFsT8uh65UcD@kaspasklasta.aikgg.mongodb.net/myFirstDatabase?retryWrites=true', {useNewUrlParser: true, useUnifiedTopology: true})
+    await mongoose.connect('mongodb+srv://kaninaba94:E3rZFsT8uh65UcD@kaspasklasta.aikgg.mongodb.net/klassix?retryWrites=true', {useNewUrlParser: true, useUnifiedTopology: true})
     const db = mongoose.connection
     db.on('error', error => console.log(error))
     db.once('open', () => console.log('Connected to Mongoose'))
@@ -39,4 +61,5 @@ if (require.main === module) {
     asyncFunction()
 }
 
-module.exports = Composer
+exports.Composer = Composer
+exports.User = User

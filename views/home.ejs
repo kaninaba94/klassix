@@ -1,0 +1,37 @@
+<% if (typeof messages !== 'undefined') {
+if (messages.error) { %>
+    <%= messages.error %>
+<% }
+} %>
+<div id="authDiv">
+    <% if (!authenticated) { %>
+        <form action="/login" method="POST">
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <a href="/register">Register</a>
+    <% } else { %>
+        <form action="/logout?_method=DELETE" method="POST">
+            <button type="submit">Log out</button>
+        </form>
+    <% } %>
+</div>
+<div id="compDiv">
+    <input type="text" id="input" size=20 placeholder="Search a composer .."/>
+    <br>
+    <ul>
+        <% if (typeof (composers) !== 'undefined') { %>
+            <% for (const composer of composers) { %>
+                <li><a href="work_composer=<%= composer.id %>"><%= composer.name %></a></li>
+            <% } %>
+        <% } %>
+    </ul>
+</div>
+<script src="/public/scripti.js"></script>

@@ -16,10 +16,34 @@ const XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest
 const https = require('https')
 const axios = require('axios')
 const expressEjsLayouts = require('express-ejs-layouts')
+const passport = require('passport')
+const methodOverride = require('method-override')
 
 const app = express()
 app.use(express.static(__dirname))
 // app.use(express.static('public'))
+app.use(passport.initialize())
+app.use(session({
+    secret: process.env.SESSION_SECRET,
+    resave: false,
+    saveUninitialized: false
+}))
+app.use(bodyParser())
+app.use(bodyParser.json())
+app.use(cookieParser('secret'))
+app.use(passport.session())
+const initializePassport = require('./passportConfig')
+const database = require('./database')
+const User = database.User
+initializePassport(
+    passport,
+    async (email) => {
+        return (await User.findOne({email: email}))
+    },
+    async (id) => {
+        return (await User.findOne({id: id}))
+    }
+)
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'))
 app.use(express.json())
@@ -29,6 +53,8 @@ app.use(express.json())
 // }))
 app.set('layout', 'layouts/layout')
 app.use(expressEjsLayouts)
+app.use(flash())
+app.use(methodOverride('_method'))
 // TODO: How do I get the works comprised in a catalogue from the musicbrianz API?
 // TODO: Migrate the local DB to MongoDB Atlas.
 
@@ -44,7 +70,7 @@ async function connect2Mongoose() {
 
 connect2Mongoose()
 
-const Composer = require('./database')
+const Composer = database.Composer
 const corsOptions = {
     origin: '*',
     methods: ['GET', 'POST', 'DELETE', 'UPDATE', 'PUT', 'PATCH'],
@@ -52,10 +78,8 @@ const corsOptions = {
 }
 
 app.get('/', async (req, res) => {
-    // // commented out to get heroku app running (it can't read files using fs)
-    // var composerIds = JSON.parse(fs.readFileSync('C:\\Users\\knaraghi\\pycharm\\klassix\\data\\artist_ids.json'))
     const composers = await Composer.find()
-    res.render('index.ejs', {composers: composers})
+    res.render('home.ejs', {composers: composers, authenticated: req.isAuthenticated()})
 })
 
 app.get('/work_composer=:id', async (req, res) => {
@@ -79,6 +103,47 @@ app.get('/test', (req, res) => {
     res.render('test.ejs')
 })
 
+app.post('/login', passport.authenticate('local', {
+    successRedirect: '/',
+    failureRedirect: '/',
+    failureFlash: true,
+}))
+
+app.get('/register', async (req, res) => {
+    res.render('register')
+})
+
+app.delete('/logout', (req, res) => {
+    req.logOut()
+    res.redirect('/')
+})
+
+app.post('/register', async (req, res) => {
+    console.log(req.body.password)
+    try {
+        const hashedPassword = await bcrypt.hash(req.body.password, 10)
+        if (await User.findOne({name: req.body.name})) {
+            res.render('register', {errorMessage: 'This user name is already registered'})
+            return
+        }
+        if (await User.findOne({email: req.body.email})) {
+            res.render('register', {errorMessage: 'This email is already registered'})
+            return
+        }
+        const newUser = new User({
+            id: Date.now().toString(),
+            name: req.body.name,
+            email: req.body.email,
+            password: hashedPassword
+        })
+        await newUser.save()
+        res.redirect('/')
+    } catch (err) {
+        console.log(err)
+        res.redirect('/register')
+    }
+})
+
 function sleep(ms) {
     return new Promise((resolve) => {
         setTimeout(resolve, ms);
@@ -86,9 +151,10 @@ function sleep(ms) {
 }
 
 const port = 3000
-app.listen(process.env.PORT || port, async () => {
+app.listen((process.env.PORT || port), async () => {
     console.log(`App is listening on port ${port}!`)
 })
 
-//TODO: Set up a large enough database of works locally to meaningfully simulate the eventual running website.
+// TODO: Set up a large enough database of works locally to meaningfully simulate the eventual running website.
 // TODO: How do I exclude gitignore files in 'git add' ?
+// TODO: Organise routing according to https://www.youtube.com/watch?v=qj2oDkvc4dQ&t=1105s
