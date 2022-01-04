@@ -48,8 +48,10 @@ const corsOptions = {
 }
 
 app.get('/', (req, res) => {
-    var composerIds = JSON.parse(fs.readFileSync('C:\\Users\\knaraghi\\pycharm\\klassix\\data\\artist_ids.json'))
-    res.render('index.ejs', {composerIds: composerIds})
+    // // commented out to get heroku app running (it can't read files using fs)
+    // var composerIds = JSON.parse(fs.readFileSync('C:\\Users\\knaraghi\\pycharm\\klassix\\data\\artist_ids.json'))
+    // res.render('index.ejs', {composerIds: composerIds})
+    res.render('index.ejs')
 })
 
 app.get('/work_composer=:id', async (req, res) => {
