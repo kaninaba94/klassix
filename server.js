@@ -78,25 +78,50 @@ const corsOptions = {
 }
 
 app.get('/', async (req, res) => {
-    const composers = await Composer.find()
-    res.render('home.ejs', {composers: composers, authenticated: req.isAuthenticated()})
+    // const composers = await Composer.find()
+    const query = 'https://api.openopus.org/composer/list/rec.json'
+    const response = await axios.get(query)
+    const essentialComposers = await response.data.composers
+    res.render('home.ejs', {composers: essentialComposers, authenticated: req.isAuthenticated()})
 })
 
-app.get('/work_composer=:id', async (req, res) => {
+async function getAllWorksByComposerId(id) {
     let maxLimit = 100  // maximal limit for musicbrainz work browsing queries is 100
     let offset = 0
-    let query = `https://www.musicbrainz.org/ws/2/work?artist=${req.params.id}&fmt=json&offset=${offset}&limit=${maxLimit}`
+    let query = `https://www.musicbrainz.org/ws/2/work?artist=${id}&fmt=json&offset=${offset}&limit=${maxLimit}`
     let musicbrainzRes = await axios.get(query)
     let works = musicbrainzRes.data.works
     const workCount = musicbrainzRes.data['work-count']
     while (offset <= workCount) {
-        await sleep(1150)
+        await sleep(1500)
         offset += maxLimit
-        query = `https://www.musicbrainz.org/ws/2/work?artist=${req.params.id}&fmt=json&offset=${offset}&limit=${maxLimit}`
-        musicbrainzRes = await axios.get(query)
-        works = works.concat(musicbrainzRes.data.works)
+        query = `https://www.musicbrainz.org/ws/2/work?artist=${id}&fmt=json&offset=${offset}&limit=${maxLimit}`
+        try {
+            musicbrainzRes = await axios.get(query)
+            works = works.concat(musicbrainzRes.data.works)
+        } catch {
+            sleep(10000)
+            musicbrainzRes = await axios.get(query)
+            works = works.concat(musicbrainzRes.data.works)
+        }
     }
-    res.render('composerWorks.ejs', {works: works})
+    return works
+}
+
+app.get('/essential_works/composer=:id', async (req, res) => {
+    // let works = getAllWorksByComposerId(req.params.id)
+    let query = `https://api.openopus.org/work/list/composer/${req.params.id}/genre/Recommended.json`
+    let response = await axios.get(query)
+    let works = await response.data.works
+    res.render('composerWorks.ejs', { works: works, authenticated: req.isAuthenticated() })
+})
+
+app.get('/work=:id', async (req, res) => {
+    let id = req.params.id
+    let query = `https://api.openopus.org/work/list/ids/${id}.json`
+    let response = await axios.get(query)
+    let work = await response.data.works[`w:${id}`]
+    res.render('work.ejs', {work: work, authenticated: req.isAuthenticated()})
 })
 
 app.get('/test', (req, res) => {
@@ -155,6 +180,11 @@ app.listen((process.env.PORT || port), async () => {
     console.log(`App is listening on port ${port}!`)
 })
 
+exports.sleep = sleep
+exports.getAllWorksByComposerId = getAllWorksByComposerId
+
 // TODO: Set up a large enough database of works locally to meaningfully simulate the eventual running website.
 // TODO: How do I exclude gitignore files in 'git add' ?
 // TODO: Organise routing according to https://www.youtube.com/watch?v=qj2oDkvc4dQ&t=1105s
+// TODO: Think of a DB structure that contains information linking users to works
+

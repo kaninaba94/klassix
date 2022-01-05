@@ -4,7 +4,7 @@ body {
     padding: 0;
 }
 
-#authDiv {
+.authDiv {
     display: flex;
     width: 100%;
     background-color: rgb(201, 229, 255);
@@ -13,17 +13,17 @@ body {
     margin: 0;
 }
 
-#authDiv form {
+.authDiv form {
     display: flex;
     margin: 10 px;
 }
 
-#authDiv label, button, a {
+.authDiv label, button, a {
     margin: 6px;
     color: darkblue;
 }
 
-#authDiv input, textarea {
+.authDiv input, textarea {
     background-color: rgb(247, 248, 250);
     margin: 6px;
     color: darkblue;
@@ -70,4 +70,13 @@ body {
 
 #registerDiv label, input, button {
     margin: 6px;
+}
+
+
+
+
+
+
+.workDiv p {
+    color: darkblue;
 }

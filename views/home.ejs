@@ -3,7 +3,7 @@ if (messages.error) { %>
     <%= messages.error %>
 <% }
 } %>
-<div id="authDiv">
+<div class="authDiv">
     <% if (!authenticated) { %>
         <form action="/login" method="POST">
             <div>
@@ -29,7 +29,7 @@ if (messages.error) { %>
     <ul>
         <% if (typeof (composers) !== 'undefined') { %>
             <% for (const composer of composers) { %>
-                <li><a href="work_composer=<%= composer.id %>"><%= composer.name %></a></li>
+                <li><a href="essential_works/composer=<%= composer.id %>"><%= composer.complete_name %></a></li>
             <% } %>
         <% } %>
     </ul>

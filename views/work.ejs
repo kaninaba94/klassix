@@ -24,10 +24,21 @@ if (messages.error) { %>
     <% } %>
 </div>
 <div class="workDiv">
-    <% for (work of works) { %>
+    <p>
+        <%= work.title %>
+    </p>
+    <p>
+        composed by <%= work.composer.complete_name %>
+    </p>
+    <p>
+        epoch: <%= work.composer.epoch %>
+    </p>
+    <% if (authenticated) { %>
         <p>
-            <a href="/work=<%= work.id %>"><%= work.title %></a>
+            rating:
+        </p>
+        <p>
+            notes:
         </p>
     <% } %>
 </div>
-
