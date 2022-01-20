@@ -71,6 +71,9 @@ async function connect2Mongoose() {
 connect2Mongoose()
 
 const Composer = database.Composer
+const OoEssentialComposer = database.OoEssentialComposer
+const OoDumpComposer = database.OoDumpComposer
+const OoComposerById = database.OoComposerById
 const corsOptions = {
     origin: '*',
     methods: ['GET', 'POST', 'DELETE', 'UPDATE', 'PUT', 'PATCH'],
@@ -79,10 +82,8 @@ const corsOptions = {
 
 app.get('/', async (req, res) => {
     // const composers = await Composer.find()
-    const query = 'https://api.openopus.org/composer/list/rec.json'
-    const response = await axios.get(query)
-    const essentialComposers = await response.data.composers
-    res.render('home.ejs', {composers: essentialComposers, authenticated: req.isAuthenticated()})
+    const ooComposersById = await OoComposerById.find().sort({ name: 1 })
+    res.render('home.ejs', {composers: ooComposersById, authenticated: req.isAuthenticated()})
 })
 
 async function getAllWorksByComposerId(id) {
@@ -109,7 +110,6 @@ async function getAllWorksByComposerId(id) {
 }
 
 app.get('/essential_works/composer=:id', async (req, res) => {
-    // let works = getAllWorksByComposerId(req.params.id)
     let query = `https://api.openopus.org/work/list/composer/${req.params.id}/genre/Recommended.json`
     let response = await axios.get(query)
     let works = await response.data.works
@@ -117,6 +117,7 @@ app.get('/essential_works/composer=:id', async (req, res) => {
 })
 
 app.get('/work=:id', async (req, res) => {
+
     let id = req.params.id
     let query = `https://api.openopus.org/work/list/ids/${id}.json`
     let response = await axios.get(query)
@@ -141,6 +142,12 @@ app.get('/register', async (req, res) => {
 app.delete('/logout', (req, res) => {
     req.logOut()
     res.redirect('/')
+})
+
+app.get('/works/composer=:id', async (req, res) => {
+    let composer = await OoComposerById.findOne({ id: req.params.id })
+    let ooDumpComposer = await OoDumpComposer.findOne({ complete_name: composer.complete_name })
+    res.render('composerWorks.ejs', {works: ooDumpComposer.works, authenticated: req.isAuthenticated()})
 })
 
 app.post('/register', async (req, res) => {
@@ -186,5 +193,10 @@ exports.getAllWorksByComposerId = getAllWorksByComposerId
 // TODO: Set up a large enough database of works locally to meaningfully simulate the eventual running website.
 // TODO: How do I exclude gitignore files in 'git add' ?
 // TODO: Organise routing according to https://www.youtube.com/watch?v=qj2oDkvc4dQ&t=1105s
-// TODO: Think of a DB structure that contains information linking users to works
+// TODO: Think of a DB structure that contains information linking users to works, and vice-versa
+// TODO: Provide functionality for inputting new works
+// TODO: Set up a data structure for composers and works and come up with your own klassixID, if necessary, or use MongoDB Object IDs
+// TODO: Can I copy works to their own collection?
+// TODO: Can I query a subdocument by its id?
+// TODO: Use Mongo discriminator to distinguish between familiar and unfamiliar works
 

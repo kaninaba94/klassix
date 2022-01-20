@@ -24,9 +24,9 @@ if (messages.error) { %>
     <% } %>
 </div>
 <div class="workDiv">
-    <% for (work of works) { %>
+    <% for (let work of works) { %>
         <p>
-            <a href="/work=<%= work.id %>"><%= work.title %></a>
+            <a href="/work=<%= work._id %>"><%= work.title %></a>
         </p>
     <% } %>
 </div>

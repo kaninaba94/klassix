@@ -18,8 +18,10 @@ if (messages.error) { %>
         </form>
         <a href="/register">Register</a>
     <% } else { %>
-        <form action="/logout?_method=DELETE" method="POST">
-            <button type="submit">Log out</button>
+        <input type="text" id="userSearchInput" placeholder="Search a user name...">
+        <button id="userSearchButton" type="submit">Search</button>
+        <form id="logoutForm" action="/logout?_method=DELETE" method="POST">
+            <button id="logoutButton" type="submit">Log out</button>
         </form>
     <% } %>
 </div>
@@ -29,7 +31,8 @@ if (messages.error) { %>
     <ul>
         <% if (typeof (composers) !== 'undefined') { %>
             <% for (const composer of composers) { %>
-                <li><a href="essential_works/composer=<%= composer.id %>"><%= composer.complete_name %></a></li>
+                <!--                <li><a href="essential_works/composer=<%= composer.name %>"><%= composer.complete_name %></a></li>-->
+                <li><a href="works/composer=<%= composer.id %>"><%= composer.complete_name %></a></li>
             <% } %>
         <% } %>
     </ul>
